@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="PEhnIU" name="Convolv" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="ADHrxe" name="Convolv">
+    <GROUP id="{8D247EC6-D8B4-3308-A887-576E3021B086}" name="AudioFile">
+      <FILE id="SbAo0C" name="AudioFile.h" compile="0" resource="0" file="Source/AudioFile/AudioFile.h"/>
+    </GROUP>
+    <GROUP id="{F0FE02A9-0D9F-B260-8558-5F8C3E83B272}" name="fft_lib"/>
+    <GROUP id="{71D80FAA-C828-CD6C-749A-59DF05633F66}" name="Source">
+      <FILE id="vJ1mYd" name="CircularBuffer.cpp" compile="1" resource="0"
+            file="Source/CircularBuffer.cpp"/>
+      <FILE id="ka67yD" name="CircularBuffer.h" compile="0" resource="0"
+            file="Source/CircularBuffer.h"/>
+      <FILE id="CIEJfH" name="Tests.cpp" compile="1" resource="0" file="Source/Tests.cpp"/>
+      <FILE id="gDhpcJ" name="Tests.h" compile="0" resource="0" file="Source/Tests.h"/>
+      <FILE id="pXbpJn" name="Convolver.cpp" compile="1" resource="0" file="Source/Convolver.cpp"/>
+      <FILE id="EYYbie" name="Convolver.h" compile="0" resource="0" file="Source/Convolver.h"/>
+      <FILE id="cf0uo7" name="AudioFFT.cpp" compile="1" resource="0" file="Source/fft_lib/AudioFFT.cpp"
+            xcodeResource="0"/>
+      <FILE id="Q4DHgV" name="AudioFFT.h" compile="0" resource="0" file="Source/fft_lib/AudioFFT.h"/>
+      <FILE id="zGQX8K" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="xEBDtH" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="R0ilOP" name="ConvolverManager.cpp" compile="1" resource="0"
+            file="Source/ConvolverManager.cpp"/>
+      <FILE id="PFOe5y" name="ConvolverManager.h" compile="0" resource="0"
+            file="Source/ConvolverManager.h"/>
+      <FILE id="jVGLdO" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="tLlgRO" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Convolv" defines=" JUCE_MODAL_LOOPS_PERMITTED=1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Convolv" defines=" JUCE_MODAL_LOOPS_PERMITTED=1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
